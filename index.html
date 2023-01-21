@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivo ou morto</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sorting">
+        <p>Próximos:</p>
+        <ol>
+        </ol>
+        <p id="order">Ordem completa: Sem sequência sorteada</p>
+    </div>
+    <div class="instructions-box">
+        <div class="instructions">
+            <p>Aperte em "Sortear nova sequência" para começar. </p>
+        </div>
+    </div>
+    <div class="controller">
+        <div class="sort-size">
+            <p>
+                Tamanho da sequência: <input id="size-input" type="number" min="3" max="99" value="5">
+            </p>
+        </div>
+        <div class="buttons">
+            <div class="new-sort">
+                <button id="sort" onclick="new_sort()">Sortear nova sequência</button>
+            </div>
+            <div class="next">
+                <button onclick="continue_sort()">
+                    <img src="img/clap.png" alt="Palmas">
+                    <p>Continuar sequência</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Isaque Nascimento &copy; 2022
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
