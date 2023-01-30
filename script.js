@@ -10,6 +10,11 @@ function random_number(min, max) {
     return Math.trunc(min + Math.random() * max);
 }
 
+function play_sound() {
+    let alert_element = document.querySelector(".alert");
+    alert_element.play();
+}
+
 function get_random_item() {
     let n = random_number(1, 100);
     if(n % 2 == 0) return 1;
@@ -203,4 +208,5 @@ function continue_sort() {
     update_elimination_text();
     update_order();
     update_nexts();
+    play_sound();
 }

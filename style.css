@@ -54,6 +54,10 @@ body {
     max-height: 4rem; 
 }
 
+.alert {
+    display: none;
+}
+
 .sorting {
     padding: 0 2rem;
     display: flex;
